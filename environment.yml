@@ -1,0 +1,19 @@
+name: simple-python-stack
+channels:
+  - conda-forge
+  - plotly
+dependencies:
+  - numpy
+  - matplotlib
+  - seaborn
+  - pandas
+  - scipy
+  - sympy
+  - numba
+  - plotly
+  - scikit-learn
+  - psutil
+  - requests
+  - pip
+  - pip:
+    - pydataset
