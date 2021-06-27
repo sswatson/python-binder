@@ -1,0 +1,25 @@
+name: postgres
+channels:
+  - conda-forge  
+  - defaults
+dependencies:
+  - postgresql
+  - psycopg2
+  - numpy
+  - matplotlib
+  - seaborn
+  - pandas
+  - scipy
+  - sympy
+  - numba
+  - plotly
+  - scikit-learn
+  - psutil
+  - requests
+  - pip
+  - pip:
+    - pandas
+    - ipython-sql
+    - pydataset
+    - tqdm
+    - tensorflow
