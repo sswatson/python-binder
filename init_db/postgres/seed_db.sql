@@ -3,10 +3,10 @@
 DROP TABLE IF EXISTS iris CASCADE;
 CREATE TABLE iris(
   id INT, 
-  sepal_length INT,
-  sepal_width INT,
-  petal_length INT,
-  petal_width INT,
+  sepal_length REAL,
+  sepal_width REAL,
+  petal_length REAL,
+  petal_width REAL,
   species VARCHAR(20)
 );
 INSERT INTO iris VALUES(0,5.1,3.5,1.4,0.2,"setosa");
