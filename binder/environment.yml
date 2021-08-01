@@ -16,6 +16,7 @@ dependencies:
   - scikit-learn
   - psutil
   - requests
+  - statsmodels
   - pip
   - pip:
     - pandas
