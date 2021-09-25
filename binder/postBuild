@@ -21,3 +21,7 @@ $CONDA_DIR/init_db/postgres/init_db.sh
 
 #Shut down the postgres server to prevent locks from a dirty shutdown
 pg_ctl -D "$PGDATA" -l "$PGDATA/pg.log" stop
+
+cat >> $HOME/.bashrc << EOF
+export DATABASE_URL=postgresql://testuser:testpass@localhost:5432/testdb
+EOF
