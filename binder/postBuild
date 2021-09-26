@@ -21,3 +21,21 @@ $CONDA_DIR/init_db/postgres/init_db.sh
 
 #Shut down the postgres server to prevent locks from a dirty shutdown
 pg_ctl -D "$PGDATA" -l "$PGDATA/pg.log" stop
+
+cat > /srv/conda/envs/notebook/share/jupyter/kernels/python3/kernel.json << EOF
+{
+ "argv": [
+  "/srv/conda/envs/notebook/bin/python",
+  "-m",
+  "ipykernel_launcher",
+  "-f",
+  "{connection_file}"
+ ],
+ "display_name": "Python 3 (ipykernel)",
+ "language": "python",
+ "metadata": {
+  "debugger": true
+ },
+ "env": {"DATABASE_URL":"postgresql://testuser:testpass@localhost:5432/testdb"}
+}
+EOF
