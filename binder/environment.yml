@@ -26,3 +26,4 @@ dependencies:
     - tensorflow
     - coconut
     - openpyxl
+    - lxml
